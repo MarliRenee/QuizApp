@@ -34,7 +34,7 @@ function startQuiz() {
       
         <div class="QuizBox">
             <button type = "submit" id="answer" tabindex="5">Submit</button>
-            <button type = "button" id="next-question" tabindex="6"> Next </button>
+            
         </div>
       </fieldset>
       
@@ -91,7 +91,6 @@ function startQuiz() {
           $('fieldset').append(`
           <h2>Congratulations!</h2> 
           <h3>That was correct</h3>
-          <img src="https://i.gifer.com/nRv.gif" alt="A happy black cat bobs back and forth">
           <button type = "button" id="next-question" tabindex="6"> Next </button>`);
           
           $(`${id}`).addClass("right-answer");
@@ -102,7 +101,7 @@ function startQuiz() {
         $('fieldset').append(`
         <h2>That wasn't the correct answer</h2> 
         <h3>No worries! The answer is "${currentQues.answer}" Now you know!</h3>
-        <img src="https://media.giphy.com/media/3o7TKHKjrDyqphX9Cg/giphy.gif" alt="A stick figure shrugs its arms">
+        
         <button type = "button" id="next-question" tabindex="6"> Next </button>`);
 
         $(`${id}`).addClass("wrong-answer");
@@ -117,7 +116,10 @@ function startQuiz() {
     });
   }
 
-  
+  //REALLY WANTED TO USE THESE WITH THE FEEDBACK ANSWERS BUT RAN OUT OF TIME TO FIGURE OUT THE MEDIA QUERIES. 
+  //SAVING HERE IN CASE I HAVE TIME TO RETURN TO IT
+  // <img src="https://media.giphy.com/media/3o7TKHKjrDyqphX9Cg/giphy.gif" alt="A stick figure shrugs its arms"></img>
+  //<img src="https://i.gifer.com/nRv.gif" alt="A happy black cat bobs back and forth"></img>
 
   //DISPLAYS THE FINAL SCORE AND RESTART BUTTON
   function displayResults() {

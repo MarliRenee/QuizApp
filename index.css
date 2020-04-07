@@ -25,9 +25,13 @@ body {
     font-weight: 600px;
     color:rgb(44, 44, 44);
     background: white;
-    padding; 100px;
+    padding: 100px;
   }
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
   .QuizBox {
     max-width: 1000px;
     padding-left: 20px;
@@ -103,34 +107,24 @@ body {
   
   label {
     font-size:18px;
-    margin-top: 5px;
-    display: block;
+    
   }
   
   .optionsButton span {
     display:block;
     border-radius:5px;
   }
-  
-  .right-answer {
-   background:white;
-   padding: 10px 20px;
-   margin: 5px 20px;
-   border: rgb(44, 44, 44);
-   text-align: center;
+
+  .feedback {
+    content: center;
   }
-  
-  .wrong-answer {
-    background:white;
-    padding: 10px;
-    margin: 5px 20px;
-    border:rgb(44, 44, 44);
-    
-  }
-  
 
   @media screen and (max-width: 420px) {
     h1 {
       font-size: 22px;
+    }
+
+    label {
+      font-size: 14px;
     }
   }
