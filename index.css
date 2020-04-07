@@ -4,23 +4,31 @@
 
 body {
     font-family: Helvetica, sans-serif;
-    color: black;
+    color: rgb(44, 44, 44);
     height: 100%;
-    margin:0;
+    margin-left:auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-image: linear-gradient( to bottom right, rgb(160, 212, 118), rgb(38, 203, 253));
     background-attachment: fixed;
   }
   
   header {
-    margin-top: 25px;
     height:80px;
-    color: black;
+    color: rgb(44, 44, 44);
     margin-bottom: 55px;
-    margin: 40px;
+    margin: 10%;
   }
-  
-  .row {
+
+  .question-and-score {
+    font-size: 20px;
+    font-weight: 600px;
+    color:rgb(44, 44, 44);
+    background: white;
+    padding; 100px;
+  }
+
+  .QuizBox {
     max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
@@ -28,37 +36,23 @@ body {
     background: white;
   }
   
-  header h1 {
+  h1 {
+    font-size: 32x;
     line-height: 1;
     top:24px;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 5px;
-  }
-
-  ul {
-      padding: 0;
-  }
-  
-  header .question-and-score {
-    font-size: 20px;
-    font-weight: 600px;
-    color:black;
     background: white;
-    padding; 100px;
-  }
-  
-  .question-and-score ul {
-    text-align:left;
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  
-  .question-and-score li {
-    display: inline-block;
-    padding:0 2%;
+    padding: 12px;
   }
 
+  li {
+    list-style-type: none;
+    font-weight: 600;
+  }
+  
+  
   form {
     margin-top: 100px;
   }
@@ -72,7 +66,7 @@ body {
     color:white;
     text-transform: uppercase;
     letter-spacing: 5px;
-    background: black;
+    background: rgb(44, 44, 44);
     border: 0;
     cursor: pointer;
     margin-bottom: 0;
@@ -104,6 +98,7 @@ body {
     list-style: none;
     margin:0;
     text-align:left;
+    
   }
   
   label {
@@ -112,7 +107,7 @@ body {
     display: block;
   }
   
-  .options span {
+  .optionsButton span {
     display:block;
     border-radius:5px;
   }
@@ -121,7 +116,7 @@ body {
    background:white;
    padding: 10px 20px;
    margin: 5px 20px;
-   border:solid black;
+   border: rgb(44, 44, 44);
    text-align: center;
   }
   
@@ -129,15 +124,13 @@ body {
     background:white;
     padding: 10px;
     margin: 5px 20px;
-    border:solid black;
+    border:rgb(44, 44, 44);
     
   }
   
-  .question-form button {
-    float:right;
-  }
 
-  
-  button:disabled {
-    opacity:0.5;
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 22px;
+    }
   }
